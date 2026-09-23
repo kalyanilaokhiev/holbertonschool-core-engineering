@@ -8,5 +8,3 @@ alphabet = ['a', 'b', 'c', 'd','e', 'f',
 for letter in alphabet:
     if letter != 'e' and letter != 'q':
         print(letter, end='')
-
-print()
