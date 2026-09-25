@@ -2,7 +2,7 @@
 
 def islower(c):
     lower = None
-    if ord(c) in range(ord('a'), ord('z')):
+    if ord(c) >= ord('a') and ord(c) <= ord('z'):
         lower = True
     else:
         lower = False
