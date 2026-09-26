@@ -6,7 +6,3 @@ def element_at(my_list, idx):
     else:
         return (my_list[idx])
 
-my_list = ["a", "b", "c", "d", "e"]
-print(element_at(my_list, 3))
-print(element_at(my_list, -1))
-print(element_at(my_list, 15))
