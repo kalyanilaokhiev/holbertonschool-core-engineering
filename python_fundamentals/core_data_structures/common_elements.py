@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
 
 def common_elements(set_1, set_2):
-    i = set_1.intersection(set_2)
-    return i
+    a = {x for x in set_1 if x in set_2}
+    return (a)
