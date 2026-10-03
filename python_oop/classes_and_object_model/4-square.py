@@ -9,12 +9,6 @@ class Square:
         # __ makes size private instance
         self.__size = size
 
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-
-        if size < 0:
-            raise ValueError("size must be >= 0")
-
     # getter
     @property
     def size(self):
@@ -26,8 +20,23 @@ class Square:
     def size(self, side):
         """setting size of square"""
         self.__size = side
+        
+        if type(side) is not int:
+            raise TypeError("size must be an integer")
+        
+        if side < 0:
+            raise ValueError("size must be >= 0")
 
     def area(self):
         """getting area from size"""
         area = self.__size * self.__size
         return area
+
+try:
+    mysquare = Square(89)
+    print(mysquare.size)
+
+    mysquare.size = "89"
+    print(mysquare.size)
+except Exception as e:
+    print(e)
