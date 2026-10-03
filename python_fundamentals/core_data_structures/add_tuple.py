@@ -11,6 +11,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     else:
         b1 = 0
 
+    # checking if theres more than 1 index
     if len(tuple_a) > 1:
         a2 = tuple_a[1]
     else:

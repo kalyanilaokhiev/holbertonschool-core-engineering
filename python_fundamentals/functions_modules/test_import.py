@@ -1,3 +1,3 @@
 #!/usr/bin/env python3
 
-a = 98
+import simple_add
