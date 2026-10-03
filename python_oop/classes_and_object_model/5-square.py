@@ -33,7 +33,10 @@ class Square:
         return area
 
     def my_print(self):
+        """printing the total as hashags"""
         if self.size == 0:
             print("")
 
-        print ("#" * self.area())
+        # prints each line of size seperatly
+        for i in range(self.__size):
+            print("#" * self.__size)
