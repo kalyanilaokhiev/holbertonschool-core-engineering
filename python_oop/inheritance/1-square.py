@@ -49,7 +49,6 @@ class Square(Rectangle):
         Rectangle.__init__(self, size, size)
         self.__size = size
 
-
     def area(self):
         """getting area from sizet"""
         area = self.__size * self.__size
