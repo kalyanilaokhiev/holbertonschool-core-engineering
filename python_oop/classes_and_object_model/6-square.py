@@ -57,12 +57,3 @@ class Square:
         # prints each line of size seperatly
         for i in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
-
-Square = __import__('6-square').Square
-
-try:
-    my_square = Square(3, "Position")
-except Exception as e:
-    print(e)
-
-print("--")
