@@ -44,10 +44,11 @@ class Square(Rectangle):
     def __init__(self, size):
         """initalising insances"""
         # renaming width and height to size
+        self.integer_validator("size", size)
+
         Rectangle.__init__(self, size, size)
         self.__size = size
 
-        self.integer_validator("size", size)
 
     def area(self):
         """getting area from sizet"""
