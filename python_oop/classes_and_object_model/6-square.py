@@ -8,7 +8,7 @@ class Square:
         """initialising instances"""
         # __ makes size private instance
         self.__size = size
-        self.__position = position
+        self.position = position
 
     # getter
     @property
@@ -38,7 +38,7 @@ class Square:
         """set postions"""
         self.__position = value
 
-        if type(value) is not tuple and len(value) != 2 and value[0] < 0 and value[1] < 0:
+        if type(value) is not tuple or len(value) != 2 or type(value[0]) is not int or type(value[1]) is not int or value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
@@ -47,10 +47,9 @@ class Square:
         return area
 
     def my_print(self):
-        """printing the total as hashtags"""
+        """printing the total as hashags"""
         if self.size == 0:
             print("")
-            return
 
         for i in range(self.__position[1]):
             print("")
@@ -58,3 +57,12 @@ class Square:
         # prints each line of size seperatly
         for i in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
+
+Square = __import__('6-square').Square
+
+try:
+    my_square = Square(3, "Position")
+except Exception as e:
+    print(e)
+
+print("--")
