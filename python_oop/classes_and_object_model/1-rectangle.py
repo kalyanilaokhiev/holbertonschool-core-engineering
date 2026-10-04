@@ -40,8 +40,3 @@ class Rectangle:
 
         if value < 0:
             raise ValueError("height must be >= 0")
-
-Rectangle = __import__('1-rectangle').Rectangle
-
-my_rectangle = Rectangle(2, 4)
-print(my_rectangle.height)
