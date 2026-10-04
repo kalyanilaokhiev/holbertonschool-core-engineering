@@ -50,6 +50,7 @@ class Square:
         """printing the total as hashags"""
         if self.size == 0:
             print("")
+            return
 
         for i in range(self.__position[1]):
             print("")
