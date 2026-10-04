@@ -7,7 +7,7 @@ class BaseGeometry:
     It defines behavior that other shape classes will build upon"""
     def area(self):
         """area function with only exception"""
-        raise Exception("are() is not implemented")
+        raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
         """method validates that a value represents
