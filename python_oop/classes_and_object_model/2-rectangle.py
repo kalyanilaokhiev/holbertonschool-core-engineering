@@ -50,6 +50,17 @@ class Rectangle:
         """getting perimeter from width and height"""
         if self.__width == 0 or self.__height == 0:
             perimeter = 0
+            return perimeter
 
         perimeter = (self.__width * 2) + (self.__height * 2)
         return perimeter
+
+Rectangle = __import__('2-rectangle').Rectangle
+
+my_rectangle = Rectangle(10)
+print("{} - {} => {} / {}".format(
+    my_rectangle.width,
+    my_rectangle.height,
+    my_rectangle.area(),
+    my_rectangle.perimeter()
+))
