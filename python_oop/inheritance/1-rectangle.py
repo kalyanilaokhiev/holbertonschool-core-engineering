@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Create a class Rectangle that inherits from BaseGeometry"""
 
+
 class BaseGeometry:
     """foundational concept for geometric shapes.
     It defines behavior that other shape classes will build upon"""
@@ -16,6 +17,7 @@ class BaseGeometry:
 
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+
 
 class Rectangle(BaseGeometry):
     """rectangle under base geometry parent"""
