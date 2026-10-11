@@ -1,0 +1,1 @@
+read me for abstract classes and interfaces
