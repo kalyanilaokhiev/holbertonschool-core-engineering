@@ -10,13 +10,13 @@ class Animal(ABC):
         pass
 
 
-def Dog(Animal):
+class Dog(Animal):
     """Dog sublasses inheriting from Animal"""
     def sound(self):
         return "Bark"
 
 
-def Cat(Animal):
+class Cat(Animal):
     """Cat sublasses inheriting from Animal"""
     def sound(self):
         return "Meow"
