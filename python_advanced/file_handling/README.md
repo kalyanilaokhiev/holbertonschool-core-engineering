@@ -1,0 +1,1 @@
+this is a readme about python file handling where i will learn abou read and write
